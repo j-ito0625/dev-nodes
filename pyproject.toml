@@ -1,0 +1,23 @@
+[project]
+name = "fujifilm-dev-ito"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "j-ito0625",email = "147583263+j-ito0625@users.noreply.github.com"}
+]
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "numpy (>=2.3.2,<3.0.0)",
+    "pandas (>=2.3.2,<3.0.0)",
+    "matplotlib (>=3.10.5,<4.0.0)",
+    "plotly (>=6.3.0,<7.0.0)",
+    "openpyxl (>=3.1.5,<4.0.0)",
+    "ipykernel (>=6.30.1,<7.0.0)",
+    "nbformat (>=5.10.4,<6.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
