@@ -20,7 +20,7 @@ except ImportError as e:
     sys.exit(1)
 
 from generate_toy_dataset import generate_toy_dataset
-from distributed_ga_scheduler import DistributedGAScheduler
+from distributed_ga_scheduler_dev import DistributedGASchedulerDev
 
 def main():
     """メイン実行関数"""
@@ -148,7 +148,7 @@ def main():
         print("Invalid input. Using recommended value.")
         num_islands = recommended_islands
     
-    scheduler = DistributedGAScheduler(dataset_file, num_islands=num_islands)
+    scheduler = DistributedGASchedulerDev(dataset_file, num_islands=num_islands)
     
     # Step 3: パラメータ設定（ユーザー入力）
     print(f"\n[Step 3] Distributed GA Parameters (press Enter for default values):")
